@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Báo điện tử Vietnamnet</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link href="gamesao.css" rel="stylesheet"/>
+
+    <script src="gamesao.js"></script>
+ 
+    <script type="text/javascript" src="/Scripts/jquery/jquery.lazyload.js"></script>    
+    
+
+</head>
+<body>
+<div  id="fb-root"></div>
+
+<div class="top-header">
+    <div class="top-header-container">
+        <div class="top-header-left">
+            <ul class="top-header-menu">
+                <li class="active"><a href="http://gamesao.vietnamnet.vn">Tin tức</a></li>
+                
+                
+            </ul>
+        </div>
+        <div class="top-header-right">
+            <ul class="menu-not-login" id="divLogin" style="display:block">
+                 <li>
+                <a href="javascript:;" id="aLogin">Đăng nhập</a>
+            </li>
+            <li>
+                <a href="javascript:;" id="aRegister">Đăng ký</a>
+            </li>
+            </ul>
+            <ul class="menu-login" id="divAccountInfo"  style="display:none">
+                <li><a href="javascript:;" id="aUserName">Xin chào: </a></li>
+                <li><a href="javascript:;" id="aChangePass">Đổi mật khẩu</a></li>
+                <li><a href="javascript:;" id="aLogout">Thoát</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<div class="MainHead">
+    <div class="HeadBlog">
+        <a href="/trang-chu.html" class="ButtonImage btnLogogs" title="Trang chủ"><span>Trang chủ</span></a>
+        <a class="gui-tin-nhanh" href="/gui-tin-nhanh.html">Gửi bài viết cho GameSao</a>
+<div class="BoxSearch">
+<form action="/Home/UcSearch" id="frmUcSearch" method="post"><input class="inputsearch" id="Keyword" name="Keyword" placeholder="Từ khóa" type="text" value="" />         <a id="aSearch" href="javascript:;" class="ButtonImage SearchBoxButton" title="Tìm kiếm"><span>Go</span></a>
+</form>    
+</div>  
+<script type="text/javascript">
+    $(function() {
+        $('#aSearch').click(function() {
+            $('#frmUcSearch').submit();
+        });
+    });
+</script>
+
+
+        <div class="top-menu">
+            <div class="clearfix">
+                <ul id="ulMenuMain" class="first-menu menu-top">
+                        <li   class="item ">
+                            <a class="label" title="Game Online" href="/game-online.html"><span>Game Online</span> </a>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="E-sport" href="/esport.html"><span>E-sport</span> </a>
+                                <ul class="submenu">
+                                        <li class=""><a title="DOTA2 The International" href="/dota2-the-international.html" class="submenutitle ">DOTA2 The International</a></li> 
+                                </ul>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="PC &amp; Console" href="/pc-console.html"><span>PC &amp; Console</span> </a>
+                                <ul class="submenu">
+                                        <li class=""><a title="C&#244;ng nghệ" href="/cong-nghe.html" class="submenutitle ">C&#244;ng nghệ</a></li> 
+                                        <li class=""><a title="Game PC &amp; Console" href="/game-pc-console.html" class="submenutitle ">Game PC &amp; Console</a></li> 
+                                </ul>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="Game Mobile" href="/game-mobile.html"><span>Game Mobile</span> </a>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="GiftCode" href="/gift-code.html"><span>GiftCode</span> </a>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="Giải Tr&#237;" href="/giai-tri.html"><span>Giải Tr&#237;</span> </a>
+                                <ul class="submenu">
+                                        <li class=""><a title="Cosplay" href="/cosplay.html" class="submenutitle ">Cosplay</a></li> 
+                                        <li class=""><a title="Funny" href="/funny.html" class="submenutitle ">Funny</a></li> 
+                                </ul>
+                        </li>  
+                        <li   class="item ">
+                            <a class="label" title="L&#224;ng Game" href="/lang-game.html"><span>L&#224;ng Game</span> </a>
+                        </li>  
+                     <li  class="item star"> <a class="label" href="/play"> <span> CHƠI</span>  </a></li>
+                    <li  class="item "><a class="label" href="/kho-game.html" title="Kho Game"><span>Game store</span> </a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        
+                   <div class="live-menu">
+                        <a title="DOTA2 The International" href="/dota2-the-international.html" class="submenutitle ">
+                            <img src="images/icon-live.png" alt="DOTA2 The International" width="54" height="54"/> DOTA2 The International</a>
+                    </div>
+
+        
+        
+    </div>
+</div>       
+
+
+<script type="text/javascript">
+    $(function () {
+        Header.init();
+        RegisterPages.init();
+        $('li', '#ulMenuMain').hover(function() {
+            //$('.submenu').hide();
+            //$('.submenu', this).show();
+            $('li', '#ulMenuMain').removeClass('active');
+            $(this).addClass('active');
+
+        }, function () {
+            $('li', '#ulMenuMain').removeClass('active');
+            $('li[active="active"]').addClass('active');
+        });
+    });
+</script>
+<div style="text-align:center;display:none;">
+<a href="http://cotyphu.gamesao.vn" target="_blank">
+	<img width="980px" src="images/IMG_10112014_152356.png"/>
+</a>
+</div>
+
+
+<div class="clearfix">
+<script type="text/javascript" language="javascript" src="http://tracking.vietnamnetad.vn/Dout/tracking.ashx?action=0e9043c1-4f14-4cc5-ac07-b832adf03391&ext=5580991b-9fb4-473a-9e0e-c49cd1cf7473&domain=http://gamesao.vn/0"></script>
+</div>
+
+
+
+    <div id="mainbody">
+        <div id="main-content">
+			
+            
+
+    <div class="SlideShow">
+        <div class="clearfix" style="padding: 10px;">
+
+
+
+            <div style="position: relative; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 960px; height: 320px;" id="divHighLight">
+                <div class="slider">
+                        <div class="item SlideShowTop">
+                            <div class="clearfix">
+                                <div class="clearfix">
+                                    <a title="LMHT: Lịch tr&#236;nh chi tiết giải đấu All-Star Las Vegas 2018" href="/esport/lmht-lich-trinh-chi-tiet-giai-dau-all-star-las-vegas-2018-33873.html" class="SlideShowImg">
+                                        <img width="640" height="320" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/eb805bf9-cab5-462b-8482-8a24dcb9b8eb.jpg.640.320.cache.fixsize">
+                                    </a>
+                                    <div class="SlideShowInfo">
+                                        <a title="LMHT: Lịch tr&#236;nh chi tiết giải đấu All-Star Las Vegas 2018" href="/esport/lmht-lich-trinh-chi-tiet-giai-dau-all-star-las-vegas-2018-33873.html" class="title">LMHT: Lịch tr&#236;nh chi tiết giải đấu All-Star Las Vegas 2018</a>
+                                        <div class="notes">
+                                            <a href="/esport.html" title="E-sport" class="blogstyle2">E-sport</a> 
+                                        </div>
+                                        <p class="lead">
+                                            (GameSao.vn) - H&#233; lộ tất cả c&#225;c cặp đấu tại Si&#234;u Sao Đại Chiến.
+                                        </p>
+                                    </div>
+                                    <p class="a-d">
+                                        <span class="author">2016 </span>
+                                    </p>
+                                    
+                                    <div class="tin-lien-quan"><hr/><h3>Tin liên quan</h3><div  class="item-news"><a title="LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko và khép lại Tiền Mùa Giải 2019" href="/esport/lmht-chi-tiet-ban-cap-nhat-8-24-tuong-moi-neeko-va-khep-lai-33872.html">LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko và khép lại Tiền Mùa Giải 2019</a></div><div  class="item-news"><a title="LMHT: Cập nhật tin tức ngày 05/12 – 04 trang phục Huyết Nguyệt mới" href="/esport/lmht-cap-nhat-tin-tuc-ngay-05-12-04-trang-phuc-huyet-nguyet-33871.html">LMHT: Cập nhật tin tức ngày 05/12 – 04 trang phục Huyết Nguyệt mới</a></div><div class="clear-fix"></div></div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item SlideShowTop">
+                            <div class="clearfix">
+                                <div class="clearfix">
+                                    <a title="LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko v&#224; kh&#233;p lại Tiền M&#249;a Giải 2019" href="/esport/lmht-chi-tiet-ban-cap-nhat-8-24-tuong-moi-neeko-va-khep-lai-33872.html" class="SlideShowImg">
+                                        <img width="640" height="320" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/87a44ae1-6ae6-40d3-922c-3fd69412cf9a.png.640.320.cache.fixsize">
+                                    </a>
+                                    <div class="SlideShowInfo">
+                                        <a title="LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko v&#224; kh&#233;p lại Tiền M&#249;a Giải 2019" href="/esport/lmht-chi-tiet-ban-cap-nhat-8-24-tuong-moi-neeko-va-khep-lai-33872.html" class="title">LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko v&#224; kh&#233;p lại Tiền M&#249;a Giải 2019</a>
+                                        <div class="notes">
+                                            <a href="/esport.html" title="E-sport" class="blogstyle2">E-sport</a> 
+                                        </div>
+                                        <p class="lead">
+                                            (GameSao.vn) - Kh&#244;ng c&#243; qu&#225; nhiều thay đổi đặc biệt trước khi ch&#250;ng ta ch&#237;nh thức bước v&#224;o m&#249;a giải mới.
+                                        </p>
+                                    </div>
+                                    <p class="a-d">
+                                        <span class="author">Gnar_G </span>
+                                    </p>
+                                    
+                                    <div class="tin-lien-quan"><hr/><h3>Tin liên quan</h3><div  class="item-news"><a title="LMHT: Cập nhật tin tức ngày 05/12 – 04 trang phục Huyết Nguyệt mới" href="/esport/lmht-cap-nhat-tin-tuc-ngay-05-12-04-trang-phuc-huyet-nguyet-33871.html">LMHT: Cập nhật tin tức ngày 05/12 – 04 trang phục Huyết Nguyệt mới</a></div><div  class="item-news"><a title="LMHT: SKT chiêu mộ cựu HLV của Afreeca" href="/esport/lmht-skt-chieu-mo-cuu-hlv-cua-afreeca-33839.html">LMHT: SKT chiêu mộ cựu HLV của Afreeca</a></div><div class="clear-fix"></div></div>
+                                
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="item SlideShowTop">
+                            <div class="clearfix">
+                                <div class="clearfix">
+                                    <a title="Dota 2: Valve cấm Kuku dự The Chongqing Major, kh&#233;p lại drama ‘ching chong’" href="/esport/dota-2-valve-cam-kuku-du-the-chongqing-major-khep-lai-drama-33866.html" class="SlideShowImg">
+                                        <img width="640" height="320" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/29675f02-519e-49d1-97a2-679309c6e22b.png.640.320.cache.fixsize">
+                                    </a>
+                                    <div class="SlideShowInfo">
+                                        <a title="Dota 2: Valve cấm Kuku dự The Chongqing Major, kh&#233;p lại drama ‘ching chong’" href="/esport/dota-2-valve-cam-kuku-du-the-chongqing-major-khep-lai-drama-33866.html" class="title">Dota 2: Valve cấm Kuku dự The Chongqing Major, kh&#233;p lại drama ‘ching chong’</a>
+                                        <div class="notes">
+                                            <a href="/esport.html" title="E-sport" class="blogstyle2">E-sport</a> 
+                                        </div>
+                                        <p class="lead">
+                                            (GameSao.vn) – Valve đưa ra quyết định sau khi c&#225;o buộc ph&#237;a TNC đ&#227; “kh&#244;ng chịu tr&#225;ch nhiệm một c&#225;ch đ&#224;ng ho&#224;ng”.
+                                        </p>
+                                    </div>
+                                    <p class="a-d">
+                                        <span class="author">Gamer </span>
+                                    </p>
+                                    
+                                    <div class="tin-lien-quan"><hr/><h3>Tin liên quan</h3><div  class="item-news"><a title="Dota 2: TNC dùng standin sẽ không bị trừ điểm, Newbee ‘thay máu’" href="/esport/dota-2-tnc-dung-standin-se-khong-bi-tru-diem-newbee-thay-mau-33838.html">Dota 2: TNC dùng standin sẽ không bị trừ điểm, Newbee ‘thay máu’</a></div><div  class="item-news"><a title="Dota 2: Drama ‘ching chong’ đang diễn biến căng như dây đàn" href="/esport/dota-2-drama-ching-chong-dang-dien-bien-cang-nhu-day-dan-33836.html">Dota 2: Drama ‘ching chong’ đang diễn biến căng như dây đàn</a></div><div class="clear-fix"></div></div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="item SlideShowTop">
+                            <div class="clearfix">
+                                <div class="clearfix">
+                                    <a title="Dota 2: Na`Vi bị loại ngay từ ‘v&#242;ng gửi xe’ của The Bucharest Minor" href="/esport/dota-2-na-vi-bi-loai-ngay-tu-vong-gui-xe-cua-the-bucharest-minor-33832.html" class="SlideShowImg">
+                                        <img width="640" height="320" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/47f7d4a0-d638-4ce0-a330-5db4e291f5f6.png.640.320.cache.fixsize">
+                                    </a>
+                                    <div class="SlideShowInfo">
+                                        <a title="Dota 2: Na`Vi bị loại ngay từ ‘v&#242;ng gửi xe’ của The Bucharest Minor" href="/esport/dota-2-na-vi-bi-loai-ngay-tu-vong-gui-xe-cua-the-bucharest-minor-33832.html" class="title">Dota 2: Na`Vi bị loại ngay từ ‘v&#242;ng gửi xe’ của The Bucharest Minor</a>
+                                        <div class="notes">
+                                            <a href="/esport.html" title="E-sport" class="blogstyle2">E-sport</a> 
+                                        </div>
+                                        <p class="lead">
+                                            (GameSao.vn) – Chưa biết đến bao giờ Na`Vi mới lấy lại được &#225;nh h&#224;o quang đ&#227; mất năm xưa.
+                                        </p>
+                                    </div>
+                                    <p class="a-d">
+                                        <span class="author">Chịu </span>
+                                    </p>
+                                    
+                                    <div class="tin-lien-quan"><hr/><h3>Tin liên quan</h3><div  class="item-news"><a title="Dota 2: Patch 7.20d căn chỉnh tốc độ di chuyển của tất cả heroes cùng nhiều items" href="/esport/dota-2-patch-7-20d-can-chinh-toc-do-di-chuyen-cua-tat-ca-heroes-33810.html">Dota 2: Patch 7.20d căn chỉnh tốc độ di chuyển của tất cả heroes cùng nhiều items</a></div><div  class="item-news"><a title="Dota 2: Xuất hiện pro player đầu tiên chơi đầy đủ 116 heroes trên đấu trường chuyên nghiệp" href="/esport/dota-2-xuat-hien-pro-player-dau-tien-choi-day-du-116-heroes-33808.html">Dota 2: Xuất hiện pro player đầu tiên chơi đầy đủ 116 heroes trên đấu trường chuyên nghiệp</a></div><div class="clear-fix"></div></div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="SlideShowList">
+            <div class="clearfix">
+                <a class="ButtonImage btnBack">
+                    <span>Back</span>
+                </a>
+                <ul class="SlideItems" id="divHighLightThumb"
+                    data-cycle-fx="carousel"
+                    data-cycle-next=".btnNext"
+                    data-cycle-prev=".btnBack"
+                     data-cycle-carousel-visible="5"
+                    data-cycle-timeout="0"
+                    data-cycle-slides=">li"
+                    data-cycle-slide-active-class="cycle-slide-active" style="position: relative; overflow: hidden; width: 882px;">
+
+                        <li class="items">
+                            <a data-cycle-index="0" href="javascript:;" title="LMHT: Lịch trình chi tiết giải đấu All-Star Las Vegas 2018">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/eb805bf9-cab5-462b-8482-8a24dcb9b8eb.jpg.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a data-cycle-index="1" href="javascript:;" title="LMHT: Chi tiết bản cập nhật 8.24 - Tướng mới Neeko và khép lại Tiền M&#249;a Giải 2019">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/87a44ae1-6ae6-40d3-922c-3fd69412cf9a.png.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a data-cycle-index="2" href="javascript:;" title="PUBG: Divine, RM5S, Refund và SGD sắp bước vào giải đấu đặc biệt nhất Việt Nam">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/004ecd44-a2c3-40e2-bce8-dda0072aeb99.png.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a data-cycle-index="3" href="javascript:;" title="Vainglory sẽ hỗ trợ đa nền tảng vào năm 2019">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/d9b1be93-a750-4672-8740-645a40eb524d.png.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                        <li class="items">
+                            <a data-cycle-index="4" href="javascript:;" title="Dota 2: Valve cấm Kuku dự The Chongqing Major, khép lại drama ‘ching chong’">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/29675f02-519e-49d1-97a2-679309c6e22b.png.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                       
+                        <li class="items">
+                            <a data-cycle-index="6" href="javascript:;" title="Dota 2: Na`Vi bị loại ngay từ ‘vòng gửi xe’ của The Bucharest Minor">
+                                <img width="165" height="82" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/47f7d4a0-d638-4ce0-a330-5db4e291f5f6.png.165.82.cache.fixsize">
+                            </a>
+                        </li>
+                </ul>
+                <a class="ButtonImage btnNext">
+                    <span>Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function () {
+            HighLight.init();
+        });
+    </script>
+
+<div class="tin2">
+    <div class="left-tin2">
+        <div class="left-tin2-1">
+<div class="anh-cos">
+    <div class="main-anhcos">
+        <div class="top-anh-cos">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2">
+                <h2><a href="/giai-tri.html">Ảnh& <span>cosplay</span> </a></h2>
+            </div>
+            <div class="CM_bg3"></div>
+        </div>
+
+        <div style="position: relative; top: 0px; left: 0px; overflow: hidden; z-index: 1; width: 328px; height: 184px;" id="divCosplay">
+            <div class="slider">
+                
+                  <div data-cosplay="true" class="item anhcos-big">
+                    <a href="/giai-tri/dao-dien-infinity-war-xac-nhan-loki-da-chet-that-khong-the-quay-33833.html">
+                        <img width="328" height="184"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/28c661b7-dbd4-46b6-8064-6fb7eee15ff8.jpg.328.184.cache.fixsize" /></a>
+                    <div data-cosplay-bg="true" class="cosbg">
+                        <h3><a href="/giai-tri/dao-dien-infinity-war-xac-nhan-loki-da-chet-that-khong-the-quay-33833.html" title="Đạo diễn Infinity War x&#225;c nhận Loki đ&#227; chết thật, kh&#244;ng thể quay lại trong Avengers 4">Đạo diễn Infinity War x&#225;c nhận Loki đ&#227; chết thật, kh&#244;ng thể quay... </a></h3>
+                        <span>
+                                                 
+                            <img  src="images/icon-comment.png" />  
+                            <a href="/giai-tri/dao-dien-infinity-war-xac-nhan-loki-da-chet-that-khong-the-quay-33833.html#comment" style="color:#CCCCCC">
+                            Bình luận (0)                                                              
+                            </a>
+                        </span>
+                    </div>
+                </div>   
+                  <div data-cosplay="true" class="item anhcos-big">
+                    <a href="/giai-tri/tan-y-thien-do-long-ky-tung-trailer-man-nhan-an-dinh-ra-mat-33848.html">
+                        <img width="328" height="184"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/466cf502-c399-4190-9fa8-4ce69e13153d.jpg.328.184.cache.fixsize" /></a>
+                    <div data-cosplay-bg="true" class="cosbg">
+                        <h3><a href="/giai-tri/tan-y-thien-do-long-ky-tung-trailer-man-nhan-an-dinh-ra-mat-33848.html" title="T&#226;n Ỷ Thi&#234;n Đồ Long K&#253; tung trailer m&#227;n nh&#227;n, ấn định ra mắt đầu năm 2019">T&#226;n Ỷ Thi&#234;n Đồ Long K&#253; tung trailer m&#227;n nh&#227;n, ấn định ra mắt đầu... </a></h3>
+                        <span>
+                                                 
+                            <img  src="images/icon-comment.png" />  
+                            <a href="/giai-tri/tan-y-thien-do-long-ky-tung-trailer-man-nhan-an-dinh-ra-mat-33848.html#comment" style="color:#CCCCCC">
+                            Bình luận (0)                                                              
+                            </a>
+                        </span>
+                    </div>
+                </div>   
+                  <div data-cosplay="true" class="item anhcos-big">
+                    <a href="/giai-tri/one-piece-khong-chi-2-tu-hoang-rau-den-con-so-huu-tan-3-trai-33854.html">
+                        <img width="328" height="184"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/b4bf499d-8a14-4ba9-80e2-272ce8228e6c.jpg.328.184.cache.fixsize" /></a>
+                    <div data-cosplay-bg="true" class="cosbg">
+                        <h3><a href="/giai-tri/one-piece-khong-chi-2-tu-hoang-rau-den-con-so-huu-tan-3-trai-33854.html" title="One Piece: Kh&#244;ng chỉ 2, Tứ Ho&#224;ng R&#226;u Đen c&#242;n sở hữu tận 3 tr&#225;i &#225;c quỷ? Sự thật hay chỉ l&#224; lời đồn v&#244; căn cứ?">One Piece: Kh&#244;ng chỉ 2, Tứ Ho&#224;ng R&#226;u Đen c&#242;n sở hữu tận 3 tr&#225;i &#225;... </a></h3>
+                        <span>
+                                                 
+                            <img  src="images/icon-comment.png" />  
+                            <a href="/giai-tri/one-piece-khong-chi-2-tu-hoang-rau-den-con-so-huu-tan-3-trai-33854.html#comment" style="color:#CCCCCC">
+                            Bình luận (0)                                                              
+                            </a>
+                        </span>
+                    </div>
+                </div>   
+                 
+                  <div data-cosplay="true" class="item anhcos-big">
+                    <a href="/giai-tri/vua-doi-nghe-danh-dien-vien-phim-nguoi-lon-nhat-ban-lai-khon-33770.html">
+                        <img width="328" height="184"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/7dacfba9-4131-4a6d-b576-d37aab320916.jpg.328.184.cache.fixsize" /></a>
+                    <div data-cosplay-bg="true" class="cosbg">
+                        <h3><a href="/giai-tri/vua-doi-nghe-danh-dien-vien-phim-nguoi-lon-nhat-ban-lai-khon-33770.html" title="Vừa đổi nghệ danh, diễn vi&#234;n phim người lớn Nhật Bản lại khốn khổ d&#237;nh tin đồn nhiễm HIV">Vừa đổi nghệ danh, diễn vi&#234;n phim người lớn Nhật Bản lại khốn kh... </a></h3>
+                        <span>
+                                                 
+                            <img  src="images/icon-comment.png" />  
+                            <a href="/giai-tri/vua-doi-nghe-danh-dien-vien-phim-nguoi-lon-nhat-ban-lai-khon-33770.html#comment" style="color:#CCCCCC">
+                            Bình luận (0)                                                              
+                            </a>
+                        </span>
+                    </div>
+                </div>   
+                  
+                  <div data-cosplay="true" class="item anhcos-big">
+                    <a href="/giai-tri/4-su-that-thu-vi-ve-nguoi-tang-hinh-john-cena-huyen-thoai-do-33762.html">
+                        <img width="328" height="184"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/11e60308-51b9-4d1d-88f0-9fc58f80588d.jpg.328.184.cache.fixsize" /></a>
+                    <div data-cosplay-bg="true" class="cosbg">
+                        <h3><a href="/giai-tri/4-su-that-thu-vi-ve-nguoi-tang-hinh-john-cena-huyen-thoai-do-33762.html" title="4 sự thật th&#250; vị về &quot;người t&#224;ng h&#236;nh&quot; John Cena - Huyền thoại đ&#244; vật WWE thế giới">4 sự thật th&#250; vị về &quot;người t&#224;ng h&#236;nh&quot; John Cena - Huyền thoại đ&#244;... </a></h3>
+                        <span>
+                                                 
+                            <img  src="images/icon-comment.png" />  
+                            <a href="/giai-tri/4-su-that-thu-vi-ve-nguoi-tang-hinh-john-cena-huyen-thoai-do-33762.html#comment" style="color:#CCCCCC">
+                            Bình luận (0)                                                              
+                            </a>
+                        </span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+
+        <div class="btn-prev-anhcos">
+            <img src="images/blank.gif" />
+        </div>
+        <div id="divCosplayThumb" class="slice-anhcos">
+            <ul class="slider">
+                
+                       <li><a href="javascript:;" title="Đạo diễn Infinity War x&#225;c nhận Loki đ&#227; chết thật, kh&#244;ng thể quay lại trong Avengers 4">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/28c661b7-dbd4-46b6-8064-6fb7eee15ff8.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="T&#226;n Ỷ Thi&#234;n Đồ Long K&#253; tung trailer m&#227;n nh&#227;n, ấn định ra mắt đầu năm 2019">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/466cf502-c399-4190-9fa8-4ce69e13153d.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="One Piece: Kh&#244;ng chỉ 2, Tứ Ho&#224;ng R&#226;u Đen c&#242;n sở hữu tận 3 tr&#225;i &#225;c quỷ? Sự thật hay chỉ l&#224; lời đồn v&#244; căn cứ?">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/b4bf499d-8a14-4ba9-80e2-272ce8228e6c.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="One Piece: Sau King Hỏa Hoạn, đối thủ ho&#224;n hảo tiếp theo của Zoro sẽ l&#224; Shiryu Mưa của băng hải tặc R&#226;u Đen">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/319e7743-257b-46d4-98f6-250aaf66bc27.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="Vừa đổi nghệ danh, diễn vi&#234;n phim người lớn Nhật Bản lại khốn khổ d&#237;nh tin đồn nhiễm HIV">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/7dacfba9-4131-4a6d-b576-d37aab320916.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="One Piece: Tứ Ho&#224;ng Shanks đ&#227; ăn tr&#225;i &#225;c quỷ v&#224; sở hữu si&#234;u năng lực li&#234;n quan đến thời gian - Sự thật hay chỉ l&#224; lời đồn đo&#225;n?">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/0ff0b341-b555-4d5e-928c-8c47284de386.jpg.82.46.cache.fixsize" /></a></li>
+                       <li><a href="javascript:;" title="4 sự thật th&#250; vị về &quot;người t&#224;ng h&#236;nh&quot; John Cena - Huyền thoại đ&#244; vật WWE thế giới">
+                        <img width="82" height="46"  src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/11e60308-51b9-4d1d-88f0-9fc58f80588d.jpg.82.46.cache.fixsize" /></a></li>
+            </ul>
+        </div>
+        <div class="btn-next-anhcos">
+            <img src="images/blank.gif" />
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        Cosplay.init();
+    });
+</script>
+
+
+<div id="divGameStore" class="game-store">
+    <div class="main-store">
+        <div class="top-store">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2">
+                <h2><a href="/kho-game.html">Game <span>Store</span> </a></h2>
+            </div>
+            <div class="CM_bg3"></div>
+        </div>
+        <div class="ct-store">
+                <div id="divGameInfo" class="store-tintop">
+                    <a href="/kho-game/lien-quan-mobile-607.html" title="Li&#234;n Qu&#226;n Mobile">
+                        <img width="133" height="76" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/6f6d9c59-fcf2-4ae2-aa76-c06d7ffb76b6.png.133.76.cache.fixsize" /></a>
+                    <h3><a href="/kho-game/lien-quan-mobile-607.html" title="Li&#234;n Qu&#226;n Mobile">Li&#234;n Qu&#226;n Mobile</a></h3>
+                    <span>
+                        <img src="images/star.png" /></span>
+                    <p>NPH: Garena</p>
+                    <p>Ra mắt: 30/11/2016 </p>
+                    <p>Thể loại : MOBA</p>
+                </div>   
+                   <div data-type="gameinfo" id="divGameInfo_698" style="display: none;" class="store-tintop">
+                       <a href="/kho-game/fifa-online-4-698.html" title="FIFA Online 4">
+                        <img width="133" height="76" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/78f9d7e9-8fe8-41a1-8198-4a57c7a07025.jpg.133.76.cache.fixsize" /></a>
+                    <h3><a href="/kho-game/fifa-online-4-698.html" title="FIFA Online 4">FIFA Online 4</a></h3>
+                    <span>
+                        <img src="images/star.png" /></span>
+                    <p>NPH: Garena</p>
+                    <p>Ra mắt:  </p>
+                    <p>Thể loại : Thể thao</p>
+                    </div>
+                   <div data-type="gameinfo" id="divGameInfo_3" style="display: none;" class="store-tintop">
+                       <a href="/kho-game/dota-2-3.html" title="Dota 2">
+                        <img width="133" height="76" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/4cf35d11-19cc-43da-a3db-e089c7b787c7.jpg.133.76.cache.fixsize" /></a>
+                    <h3><a href="/kho-game/dota-2-3.html" title="Dota 2">Dota 2</a></h3>
+                    <span>
+                        <img src="images/star.png" /></span>
+                    <p>NPH: Valve </p>
+                    <p>Ra mắt: 09/07/2013 </p>
+                    <p>Thể loại : MOBA</p>
+                    </div>
+                   <div data-type="gameinfo" id="divGameInfo_621" style="display: none;" class="store-tintop">
+                       <a href="/kho-game/crossfire-legends-621.html" title="Crossfire Legends">
+                        <img width="133" height="76" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/8ace6ccc-30f8-46f4-9d20-b466669d0144.jpg.133.76.cache.fixsize" /></a>
+                    <h3><a href="/kho-game/crossfire-legends-621.html" title="Crossfire Legends">Crossfire Legends</a></h3>
+                    <span>
+                        <img src="images/star.png" /></span>
+                    <p>NPH: VNG</p>
+                    <p>Ra mắt: 16/04/2017 </p>
+                    <p>Thể loại : Bắn s&#250;ng</p>
+                    </div>
+                   
+                   <div data-type="gameinfo" id="divGameInfo_487" style="display: none;" class="store-tintop">
+                       <a href="/kho-game/huyen-thoai-moba-487.html" title="Huyền Thoại MOBA">
+                        <img width="133" height="76" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/c31d818f-562a-43f6-8fb1-a17cdbdd8d05.png.133.76.cache.fixsize" /></a>
+                    <h3><a href="/kho-game/huyen-thoai-moba-487.html" title="Huyền Thoại MOBA">Huyền Thoại MOBA</a></h3>
+                    <span>
+                        <img src="images/star.png" /></span>
+                    <p>NPH: VTC Mobile</p>
+                    <p>Ra mắt: 05/05/2016 </p>
+                    <p>Thể loại : MOBA</p>
+                    </div>
+                              <div id="divListing" class="store-slice">
+                     <ul>
+                               <li><a data-type="game" rel="divGameInfo_698" href="/kho-game/fifa-online-4-698.html" title="FIFA Online 4">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/78f9d7e9-8fe8-41a1-8198-4a57c7a07025.jpg.96.54.cache.fixsize" /></a></li>
+                                 <li class="padding-img-st"><a data-type="game" rel="divGameInfo_3" href="/kho-game/dota-2-3.html" title="Dota 2">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/4cf35d11-19cc-43da-a3db-e089c7b787c7.jpg.96.54.cache.fixsize" /></a></li>
+                               <li><a data-type="game" rel="divGameInfo_621" href="/kho-game/crossfire-legends-621.html" title="Crossfire Legends">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/8ace6ccc-30f8-46f4-9d20-b466669d0144.jpg.96.54.cache.fixsize" /></a></li>
+                               <li><a data-type="game" rel="divGameInfo_612" href="/kho-game/phuc-long-612.html" title="Phục Long">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/006cf057-ca78-4825-b86b-49ab4fed7751.jpg.96.54.cache.fixsize" /></a></li>
+                                 <li class="padding-img-st"><a data-type="game" rel="divGameInfo_608" href="/kho-game/truy-kich-mobile-608.html" title="Truy K&#237;ch Mobile">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/8f732b8d-8ab3-4831-aaec-a8137afd1066.jpg.96.54.cache.fixsize" /></a></li>
+                               <li><a data-type="game" rel="divGameInfo_487" href="/kho-game/huyen-thoai-moba-487.html" title="Huyền Thoại MOBA">
+                                 <img width="96" height="54" src="http://photoservice.gamesao.vn/Resources/Upload/Images/Game/c31d818f-562a-43f6-8fb1-a17cdbdd8d05.png.96.54.cache.fixsize" /></a></li>
+                     </ul>  
+                 </div>
+        </div>
+    </div>
+
+</div>    
+    
+
+<script type="text/javascript">
+    $(function () {
+        UcGameStore.init();
+    });
+</script>  
+
+
+
+
+        </div>
+        <div class="left-tin2-diemtin">
+            <div id="divDiemTin" class="main-diemtin" style="margin-top: 10px;">
+    <div class="top-diemtin">
+        <div class="top-diemtin-padding">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2"><h2><a href="javascript:;">Điểm tin <span>GameSao</span> </a></h2></div>
+            <div class="CM_bg3"></div>
+        </div>  
+        <div class="btn-tinmoinhat">
+            <ul>
+                <li class="active"><a data-type="tab" data-content-Id="divTinMoi" href="javascript:;">Tin mới nhất</a></li>
+                <li> <a data-type="tab" data-content-Id="divTinDocNhieu" href="javascript:;">Tin đọc nhiều</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div id="divTinMoi" class="list-ct-diemtin" data-type="content">
+        <div id="divListingTinMoi">
+        </div>
+        <div class="btn-diemtin"><a id="aViewMoreTinMoi" href="javascript:;">Xem thêm, còn nhiều lắm!</a></div>
+    </div>   
+    <div id="divTinDocNhieu" class="list-ct-diemtin" style="display: none;" data-type="content">
+        <div id="divListingTinDocNhieu">
+        </div>
+        <div class="btn-diemtin"><a id="aViewMoreTinDocNhieu" href="javascript:;">Xem thêm, còn nhiều lắm!</a></div>
+    </div>
+
+
+<script type="text/javascript">
+    $(function () {
+        UcDiemTin.init();
+    });
+</script>
+</div>                         
+
+        </div>
+        <div class="left-tin2-3">
+<div class="congnghe">
+    <div class="main-congnghe">
+        <div class="top-anh-cos">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2">
+                <h2><a href="/cong-nghe.html">Công <span>Nghệ</span> </a></h2>
+            </div>
+            <div class="CM_bg3"></div>
+        </div>
+        <div class="congnghe-big">
+                <a href="/cong-nghe/bo-phan-mem-microsoft-office-chuan-bi-thay-doi-icon-moi-33820.html" title="Bộ phần mềm Microsoft Office chuẩn bị thay đổi icon mới">
+                    <img width="310" height="174" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/f94df773-9a9f-4fbc-8c0d-083aa2d7add9.jpg.310.174.cache.fixsize" /></a>
+                <h3><a href="/cong-nghe/bo-phan-mem-microsoft-office-chuan-bi-thay-doi-icon-moi-33820.html" title="Bộ phần mềm Microsoft Office chuẩn bị thay đổi icon mới">Bộ phần mềm Microsoft Office chuẩn bị thay đổi icon mới</a></h3>    
+                            <ul>
+                       <li><a href="/cong-nghe/hacker-cuop-quyen-dieu-khien-cua-50-000-may-in-keu-goi-moi-nguoi-33820.html" title="Hacker cướp quyền điều khiển của 50.000 m&#225;y in, k&#234;u gọi mọi người h&#227;y subscribe cho PewDiePie">Hacker cướp quyền điều khiển của 50.000 m&#225;y in, k&#234;u gọi mọi người h&#227;y subscribe cho PewDiePie</a></li>
+                       <li><a href="/cong-nghe/galaxy-s10-se-co-3-phien-ban-6-camera-va-mang-5g-33820.html" title="Galaxy S10 sẽ c&#243; 3 phi&#234;n bản, 6 camera v&#224; mạng 5G">Galaxy S10 sẽ c&#243; 3 phi&#234;n bản, 6 camera v&#224; mạng 5G</a></li>
+                       <li><a href="/cong-nghe/kenh-truyen-hinh-ve-tinh-8k-dau-tien-ra-mat-tai-nhat-ban-33820.html" title="K&#234;nh truyền h&#236;nh vệ tinh 8K đầu ti&#234;n ra mắt tại Nhật Bản">K&#234;nh truyền h&#236;nh vệ tinh 8K đầu ti&#234;n ra mắt tại Nhật Bản</a></li>
+                </ul> 
+        </div>
+    </div>
+</div>
+
+<div class="E-sport">
+    <div class="main-esport">
+        <div class="top-anh-cos">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2">
+                <h2><a href="/esport.html">E - <span>sport</span> </a></h2>
+            </div>
+            <div class="CM_bg3"></div>
+        </div>
+        <div class="congnghe-big">
+                <a href="/esport/lmht-evos-cong-bo-tan-binh-duong-giua-la-em-trai-cua-thay-giao-33879.html" title="LMHT: EVOS c&#244;ng bố t&#226;n binh đường giữa l&#224; em trai của Thầy Gi&#225;o Ba">
+                    <img width="310" height="174" src="http://photoservice.gamesao.vn/Resources/Upload/Images/News/76901796-7696-4bef-8314-6c74e83bb39d.png.310.174.cache.fixsize " /></a>
+                <h3><a href="/esport/lmht-evos-cong-bo-tan-binh-duong-giua-la-em-trai-cua-thay-giao-33879.html" title="LMHT: EVOS c&#244;ng bố t&#226;n binh đường giữa l&#224; em trai của Thầy Gi&#225;o Ba">LMHT: EVOS c&#244;ng bố t&#226;n binh đường giữa l&#224; em trai của Thầy Gi&#225;o Ba</a></h3>    
+                            <ul>
+                        <li><a href="/esport/big-update-fifa-online-4-thang-12-chinh-thuc-duoc-trai-nghiem-33879.html" title="Big Update FIFA Online 4 th&#225;ng 12: Ch&#237;nh thức được trải nghiệm Quang Hải, Xu&#226;n Trường, C&#244;ng Phượng">Big Update FIFA Online 4 th&#225;ng 12: Ch&#237;nh thức được trải nghiệm Quang Hải, Xu&#226;n Trường, C&#244;ng Phượng</a></li>
+                        <li><a href="/esport/dota-2-cuoi-cung-thi-og-cung-du-dieu-kien-du-mot-giai-dau-thuoc-33879.html" title="Dota 2: Cuối c&#249;ng th&#236; OG cũng đủ điều kiện dự một giải đấu thuộc DPC">Dota 2: Cuối c&#249;ng th&#236; OG cũng đủ điều kiện dự một giải đấu thuộc DPC</a></li>
+                        <li><a href="/esport/lmht-lich-trinh-chi-tiet-giai-dau-all-star-las-vegas-2018-33879.html" title="LMHT: Lịch tr&#236;nh chi tiết giải đấu All-Star Las Vegas 2018">LMHT: Lịch tr&#236;nh chi tiết giải đấu All-Star Las Vegas 2018</a></li>
+                </ul> 
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <div class="right-tin2">
+<div id="divBannerRight1" style="width:300px;float:left;" class="QC">
+    <script type="text/javascript" language="javascript" src="http://tracking.vietnamnetad.vn/Dout/tracking.ashx?action=0e9043c1-4f14-4cc5-ac07-b832adf03391&ext=8e269091-a362-4b97-a59d-9c122d4dc25a&domain=http://gamesao.vn/0"></script>
+    
+</div>
+<!--End Banner Right1 -->
+
+
+        <div id="divEvent" class="Sukien">
+    <div class="main-sukien">
+            <div class="top-anh-cos">
+                <div class="CM_bg1"></div>
+                <div class="CM_bg2"><h2><a href="/gift-code.html">Gift <span>code</span> </a></h2></div>
+                <div class="CM_bg3"></div>
+            </div>
+            <div class="list-sukien" id="divListing">
+            </div>  
+        </div>	
+</div>      
+
+
+<script type="text/javascript">
+    $(function () {
+        UcEvent.init();
+    });
+</script>
+        
+        <div id="divRightNeo" style="float: left; width: 300px;">
+        
+            <div id="divRightNeoHeight" style="float: left; width: 300px;">
+            
+               
+<div id="divBannerRight2" class="QC">
+    <script type="text/javascript" language="javascript" src="http://tracking.vietnamnetad.vn/Dout/tracking.ashx?action=0e9043c1-4f14-4cc5-ac07-b832adf03391&ext=be7599e2-9b43-4d4a-ad1e-5c5d4e8de87e&domain=http://gamesao.vn/0"></script>
+</div> 
+
+
+               
+<div id="divBannerRight2" class="QC">
+    <script type="text/javascript" language="javascript" src="http://tracking.vietnamnetad.vn/Dout/tracking.ashx?action=0e9043c1-4f14-4cc5-ac07-b832adf03391&ext=90300619-242e-4ed8-9574-f285a4933761&domain=http://gamesao.vn/0"></script>
+</div>
+
+            </div>
+            <div class="fanpage">
+    <div class="main-fanpage">
+        <div class="top-anh-cos">
+            <div class="CM_bg1"></div>
+            <div class="CM_bg2">
+                <h2><a href="https://www.facebook.com/baogamesao.vn">Fan <span>Page</span> </a></h2>
+            </div>
+            <div class="CM_bg3"></div>
+        </div>
+        <div class="fanpage-ct">
+           
+            <div class="fb-like-box" data-href="https://www.facebook.com/baogamesao.vn" data-width="290" data-height="455" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+        </div>
+    </div>
+</div>
+
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+        $(function () {
+            try {
+
+                $(window).scroll(function () {
+					//return;
+                    var heightNeo = $("#divRightNeoHeight").height() + 503;
+                    if ($('.left-tin2').size() && $('#divRightNeo').size() && $(".left-tin2").height() > (heightNeo + 260)) {
+                        var a = COMMON.getScrollTop();
+                        var b = $("#gfooter").position().top - heightNeo  - 20;
+
+                        if (a > ($("#divBannerRight1").position().top + 260)) {
+                            if (a >= b) {
+                                $("#divRightNeo").css({ position: "absolute", top: b });
+                            } else {
+                                $("#divRightNeo").css({ position: "fixed", top: "0px" });
+                            }
+                        } else {
+                            $("#divRightNeo").css("position", "static");
+                        }
+                    } else {
+                        $("#divRightNeo").css("position", "static");
+                    }
+                });
+            } catch (e) {
+
+            }
+        });
+    </script>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+<div id="gfooter">
+<div class="footer-menu">
+    <div class="footer-menu-container">
+        <ul>
+            <li><a class="active" href="/trang-chu.html" title="Trang chủ">Trang chủ</a></li>
+                <li><a class="" href="/game-online.html" title="Game Online">Game Online</a></li>
+                <li><a class="" href="/esport.html" title="E-sport">E-sport</a></li>
+                <li><a class="" href="/pc-console.html" title="PC &amp; Console">PC &amp; Console</a></li>
+                <li><a class="" href="/game-mobile.html" title="Game Mobile">Game Mobile</a></li>
+                <li><a class="" href="/gift-code.html" title="GiftCode">GiftCode</a></li>
+                <li><a class="" href="/giai-tri.html" title="Giải Tr&#237;">Giải Tr&#237;</a></li>
+                <li><a class="" href="/lang-game.html" title="L&#224;ng Game">L&#224;ng Game</a></li>
+                <li><a class="" href="/kho-game.html" title="Game store">Game store</a></li>
+                
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="/trang-chu.html" title="GameSao"><img width="150" height="87" alt="GameSao" src="/Content/Images/header/logo-footer-vnn.png" /></a>
+        </div>
+        <div class="footer-social">
+            <ul class="footer-link">
+                <li><a href="http://m.gamesao.vn" target="_blank">Phiên bản mobile</a></li>
+                <li><a href="http://gamesao.vn/rss.html" target="_blank">Nhận tin RSS</a></li>
+                <li><a href="http://vads.vn/" target="_blank">Liên hệ quảng cáo</a></li>
+            </ul>
+            <ul class="footer-social-icon">
+                <li><span>SOCIAL NETWORK:</span></li>
+                <li><a class="icon-social facebook" href="https://www.facebook.com/baogamesao.vn" target="_blank" title="Facebook">Facebook</a></li>
+                <li><a class="icon-social twitter" href="https://twitter.com/gamesaovn" target="_blank" title="Twitter">Twitter</a></li>
+                <li><a class="icon-social google" href="https://plus.google.com/u/0/+GamesaoVnChannel" target="_blank" title="G+">G+</a></li>
+                <li><a class="icon-social youtube" href="https://www.youtube.com/user/gamesao" target="_blank" title="Youtube">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <span>© 1997-2014 Báo VietNamNet. All rights reserved.</span>
+            <span>® Chỉ được phát hành lại thông tin từ website này khi có sự đồng ý bằng văn bản của báo VietNamNet. </span>
+            <span>Email liên hệ: <a href="mailto:gamesao@vietnamnet.vn">gamesao@vietnamnet.vn</a> </span>
+        </div>
+    </div>
+</div>
+</div>
+
+    <a id="to_top" href="javascript:;">
+        <img src="/Content/Images/icon_gototop.png"></a>
+
+	
+	
+	<script type="text/javascript">
+         $(function() {
+			 $("img").lazyload({
+				 effect : "fadeIn"
+			 });
+			 
+			 
+			 
+			 
+		  });
+    </script>
+	
+</body>
+</html>
